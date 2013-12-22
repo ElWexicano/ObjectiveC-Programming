@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>28D3574D-D8DE-4061-B212-5DD4EB21B5E3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ClassCertificates</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>216E1007-8C53-4845-A136-1E55FFB2EB2A</key>
+		<string>ssh://github.com/iamshanedoyle/ObjectiveC-Programming.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ClassCertificates/ClassCertificates.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>216E1007-8C53-4845-A136-1E55FFB2EB2A</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/iamshanedoyle/ObjectiveC-Programming.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>216E1007-8C53-4845-A136-1E55FFB2EB2A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>216E1007-8C53-4845-A136-1E55FFB2EB2A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ObjectiveC-Programming</string>
+		</dict>
+	</array>
+</dict>
+</plist>
