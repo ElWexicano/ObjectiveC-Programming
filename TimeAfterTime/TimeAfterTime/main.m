@@ -12,7 +12,7 @@ int main(int argc, const char * argv[])
 {
     @autoreleasepool {
         
-        NSDate *now = [NSDate date];
+        NSDate *now = [[NSDate alloc] init];
         NSLog(@"The new date lives at %p", now);
         NSLog(@"The new date is %@", now);
         
@@ -41,6 +41,23 @@ int main(int argc, const char * argv[])
         double secondsSinceBirth = [now timeIntervalSinceDate:dateOfBirth];
         
         NSLog(@"The number of seconds since I was born is %f", secondsSinceBirth);
+        
+        // Chapter 13 More Messages
+        
+        NSCalendar *calendar = [NSCalendar currentCalendar];
+        NSUInteger day = [calendar ordinalityOfUnit:NSDayCalendarUnit
+                                             inUnit:NSMonthCalendarUnit
+                                            forDate:now];
+        
+        NSLog(@"This is the day %lu of the month.. HoHoHo", day);
+        
+        NSUInteger hour = [calendar ordinalityOfUnit:NSHourCalendarUnit
+                                              inUnit:NSYearCalendarUnit
+                                             forDate:now];
+        
+        NSLog(@"The hour of the day is %lu", hour);
+        
+        
     }
     return 0;
 }
