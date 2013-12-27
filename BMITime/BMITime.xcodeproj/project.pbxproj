@@ -11,6 +11,7 @@
 		34743339186CDA5700CAA5DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34743338186CDA5700CAA5DB /* main.m */; };
 		3474333D186CDA5700CAA5DB /* BMITime.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3474333C186CDA5700CAA5DB /* BMITime.1 */; };
 		34743345186CDB7300CAA5DB /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 34743344186CDB7300CAA5DB /* Person.m */; };
+		34743365186DCD3100CAA5DB /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 34743364186DCD3100CAA5DB /* Employee.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		3474333C186CDA5700CAA5DB /* BMITime.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = BMITime.1; sourceTree = "<group>"; };
 		34743343186CDB7300CAA5DB /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		34743344186CDB7300CAA5DB /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		34743363186DCD3100CAA5DB /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		34743364186DCD3100CAA5DB /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				34743343186CDB7300CAA5DB /* Person.h */,
+				34743363186DCD3100CAA5DB /* Employee.h */,
+				34743364186DCD3100CAA5DB /* Employee.m */,
 				34743344186CDB7300CAA5DB /* Person.m */,
 				34743337186CDA5700CAA5DB /* BMITime */,
 				34743334186CDA5700CAA5DB /* Frameworks */,
@@ -144,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34743365186DCD3100CAA5DB /* Employee.m in Sources */,
 				34743345186CDB7300CAA5DB /* Person.m in Sources */,
 				34743339186CDA5700CAA5DB /* main.m in Sources */,
 			);
@@ -257,6 +263,7 @@
 				34743342186CDA5700CAA5DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Person.h"
+#import "Employee.h"
 
 int main(int argc, const char * argv[])
 {
@@ -15,11 +15,12 @@ int main(int argc, const char * argv[])
     @autoreleasepool {
         
         // Create an instance of Person
-        Person *person = [[Person alloc] init];
+        Employee *person = [[Employee alloc] init];
         
         // Give the instance variables interesting values
         [person setWeightInKilos:86];
         [person setHeightInMeters:1.80];
+        [person setEmployeeID:15];
         
         // Calculate the Body Mass Index
         float bmi = [person bodyMassIndex];
@@ -27,6 +28,7 @@ int main(int argc, const char * argv[])
         
         NSLog(@"The person height is %.2f and weight is %d", [person heightInMeters], [person weightInKilos]);
         
+        NSLog(@"Employee %d has a BMI of %.0f", [person employeeID], bmi);
     }
     return 0;
 }
