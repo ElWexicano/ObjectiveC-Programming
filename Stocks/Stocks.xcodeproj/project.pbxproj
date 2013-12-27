@@ -11,6 +11,7 @@
 		34743356186CE07E00CAA5DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34743355186CE07E00CAA5DB /* main.m */; };
 		3474335A186CE07E00CAA5DB /* Stocks.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 34743359186CE07E00CAA5DB /* Stocks.1 */; };
 		34743362186CE09800CAA5DB /* StockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = 34743361186CE09800CAA5DB /* StockHolding.m */; };
+		34743368186DD6FE00CAA5DB /* ForeignStockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = 34743367186DD6FE00CAA5DB /* ForeignStockHolding.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		34743359186CE07E00CAA5DB /* Stocks.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Stocks.1; sourceTree = "<group>"; };
 		34743360186CE09800CAA5DB /* StockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockHolding.h; sourceTree = "<group>"; };
 		34743361186CE09800CAA5DB /* StockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockHolding.m; sourceTree = "<group>"; };
+		34743366186DD6FE00CAA5DB /* ForeignStockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ForeignStockHolding.h; path = Stocks/ForeignStockHolding.h; sourceTree = "<group>"; };
+		34743367186DD6FE00CAA5DB /* ForeignStockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ForeignStockHolding.m; path = Stocks/ForeignStockHolding.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +56,8 @@
 			children = (
 				34743360186CE09800CAA5DB /* StockHolding.h */,
 				34743361186CE09800CAA5DB /* StockHolding.m */,
+				34743366186DD6FE00CAA5DB /* ForeignStockHolding.h */,
+				34743367186DD6FE00CAA5DB /* ForeignStockHolding.m */,
 				34743354186CE07E00CAA5DB /* Stocks */,
 				34743351186CE07E00CAA5DB /* Frameworks */,
 				34743350186CE07E00CAA5DB /* Products */,
@@ -144,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34743368186DD6FE00CAA5DB /* ForeignStockHolding.m in Sources */,
 				34743362186CE09800CAA5DB /* StockHolding.m in Sources */,
 				34743356186CE07E00CAA5DB /* main.m in Sources */,
 			);
@@ -257,6 +263,7 @@
 				3474335F186CE07E00CAA5DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

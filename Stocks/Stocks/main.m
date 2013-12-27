@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "StockHolding.h"
+#import "ForeignStockHolding.h"
 
 int main(int argc, const char * argv[])
 {
@@ -35,10 +35,26 @@ int main(int argc, const char * argv[])
         [stock3 setCurrentSharePrice:49.51];
         [stock3 setNumberOfShares:210];
        
+        // Create an instance of ForeignStockHolding.
+        ForeignStockHolding *stock4 = [[ForeignStockHolding alloc] init];
+        [stock4 setPurchaseSharePrice:55.10];
+        [stock4 setCurrentSharePrice:60.01];
+        [stock4 setNumberOfShares:300];
+        [stock4 setConversionRate:1.23];
+
+        // Create another instance of ForeignStockHolding.
+        ForeignStockHolding *stock5 = [[ForeignStockHolding alloc] init];
+        [stock5 setPurchaseSharePrice:123.17];
+        [stock5 setCurrentSharePrice:101.99];
+        [stock5 setNumberOfShares:220];
+        [stock5 setConversionRate:0.73];
+        
         // Add the instances to the array.
         [stocks addObject:stock2];
         [stocks addObject:stock1];
         [stocks addObject:stock3];
+        [stocks addObject:stock4];
+        [stocks addObject:stock5];
         
         // Loop through the array and print out its information.
         for (StockHolding *stock in stocks) {
