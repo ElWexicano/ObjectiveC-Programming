@@ -16,3 +16,5 @@ The folder __BeerSong__ represents _Chapter 5 Functions_ in the book.
 The folder __Degrees__ represents _Chapter 5 Functions_ in the book.
 
 The folder __Triangle__ contains the challenge _Chapter 5 Functions_ in the book.
+
+I will update the README to match the correct chapters as soon as I get the time. I'm very lazy about this.
