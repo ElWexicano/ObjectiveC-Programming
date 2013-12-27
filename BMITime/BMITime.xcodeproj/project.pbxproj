@@ -12,6 +12,7 @@
 		3474333D186CDA5700CAA5DB /* BMITime.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3474333C186CDA5700CAA5DB /* BMITime.1 */; };
 		34743345186CDB7300CAA5DB /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 34743344186CDB7300CAA5DB /* Person.m */; };
 		34743365186DCD3100CAA5DB /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 34743364186DCD3100CAA5DB /* Employee.m */; };
+		3474336E186DEC2600CAA5DB /* Asset.m in Sources */ = {isa = PBXBuildFile; fileRef = 3474336D186DEC2600CAA5DB /* Asset.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,8 @@
 		34743344186CDB7300CAA5DB /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		34743363186DCD3100CAA5DB /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
 		34743364186DCD3100CAA5DB /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		3474336C186DEC2600CAA5DB /* Asset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Asset.h; sourceTree = "<group>"; };
+		3474336D186DEC2600CAA5DB /* Asset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Asset.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +57,8 @@
 		34743329186CDA5700CAA5DB = {
 			isa = PBXGroup;
 			children = (
+				3474336C186DEC2600CAA5DB /* Asset.h */,
+				3474336D186DEC2600CAA5DB /* Asset.m */,
 				34743343186CDB7300CAA5DB /* Person.h */,
 				34743363186DCD3100CAA5DB /* Employee.h */,
 				34743364186DCD3100CAA5DB /* Employee.m */,
@@ -151,6 +156,7 @@
 			files = (
 				34743365186DCD3100CAA5DB /* Employee.m in Sources */,
 				34743345186CDB7300CAA5DB /* Person.m in Sources */,
+				3474336E186DEC2600CAA5DB /* Asset.m in Sources */,
 				34743339186CDA5700CAA5DB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

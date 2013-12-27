@@ -7,6 +7,7 @@
 //
 
 #import "Employee.h"
+#import "Asset.h"
 
 @implementation Employee
 
@@ -16,6 +17,39 @@
 {
     float normalBMI = [super bodyMassIndex];
     return normalBMI * 0.9;
+}
+
+- (void)addAssetsObject:(Asset *)asset
+{
+    // Check if assets is nil.
+    if (!assets) {
+        assets = [[NSMutableArray alloc] init];
+    }
+    
+    [assets addObject:asset];
+}
+
+- (unsigned int)valueOfAssets
+{
+    // Sum up the resale value of the assets.
+    unsigned int sum = 0;
+    
+    for (Asset *asset in assets) {
+        sum += [asset resaleValue];
+    }
+    
+    return sum;
+}
+
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"<Employee %d: $%d in assets>",
+            [self employeeID], [self valueOfAssets]];
+}
+
+- (void)dealloc
+{
+    NSLog(@"deallocating %@", self);
 }
 
 @end

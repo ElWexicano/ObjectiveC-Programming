@@ -8,27 +8,56 @@
 
 #import <Foundation/Foundation.h>
 #import "Employee.h"
+#import "Asset.h"
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
         
-        // Create an instance of Person
-        Employee *person = [[Employee alloc] init];
         
-        // Give the instance variables interesting values
-        [person setWeightInKilos:86];
-        [person setHeightInMeters:1.80];
-        [person setEmployeeID:15];
         
-        // Calculate the Body Mass Index
-        float bmi = [person bodyMassIndex];
-        NSLog(@"The person has a BMI of %.0f", bmi);
+        NSMutableArray *employess = [NSMutableArray array];
         
-        NSLog(@"The person height is %.2f and weight is %d", [person heightInMeters], [person weightInKilos]);
+        for (int i = 0; i < 10; i++) {
+            // Create an instance of Person
+            Employee *person = [[Employee alloc] init];
+            
+            // Give the instance variables interesting values
+            [person setWeightInKilos:90+1];
+            [person setHeightInMeters:1.8 * -1/10.0];
+            [person setEmployeeID:i];
+            
+            [employess addObject:person];
+        }
         
-        NSLog(@"Employee %d has a BMI of %.0f", [person employeeID], bmi);
+        
+        for (int i = 0; i < 10; i++) {
+            
+            // Create an instance of Asset
+            Asset *asset = [[Asset alloc] init];
+            
+            NSString *currentLabel = [NSString stringWithFormat:@"Laptop %d", i];
+            [asset setLabel:currentLabel];
+            [asset setResaleValue:i*17];
+            
+            NSUInteger randomIndex = random() % [employess count];
+            
+            Employee *randomEmployee = [employess objectAtIndex:randomIndex];
+            
+            [randomEmployee addAssetsObject:asset];
+        }
+        
+        
+        NSLog(@"Employees: %@", employess);
+
+        NSLog(@"Giving up ownership of one employee");
+        
+        [employess removeObjectAtIndex:5];
+        
+        NSLog(@"Giving up ownership of array");
+        
+        employess = nil;
     }
     return 0;
 }
