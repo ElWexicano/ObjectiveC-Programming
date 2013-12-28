@@ -27,6 +27,7 @@
     }
     
     [assets addObject:asset];
+    [asset setHolder:self];
 }
 
 - (unsigned int)valueOfAssets
