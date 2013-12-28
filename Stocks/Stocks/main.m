@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "ForeignStockHolding.h"
+#import "Portfolio.h"
 
 int main(int argc, const char * argv[])
 {
@@ -45,7 +46,7 @@ int main(int argc, const char * argv[])
         // Create another instance of ForeignStockHolding.
         ForeignStockHolding *stock5 = [[ForeignStockHolding alloc] init];
         [stock5 setPurchaseSharePrice:123.17];
-        [stock5 setCurrentSharePrice:101.99];
+        [stock5 setCurrentSharePrice:131.99];
         [stock5 setNumberOfShares:220];
         [stock5 setConversionRate:0.73];
         
@@ -56,10 +57,21 @@ int main(int argc, const char * argv[])
         [stocks addObject:stock4];
         [stocks addObject:stock5];
         
+        
+        // Create a portfolio
+        Portfolio *portfolio = [[Portfolio alloc] init];
+        
+        
         // Loop through the array and print out its information.
         for (StockHolding *stock in stocks) {
+
+            [portfolio addStockToPortfolio:stock];
+            
             NSLog(@"The cost in $%.2f and the value is $%.2f for %d shares", [stock costInDollars], [stock valueInDollars], [stock numberOfShares]);
         }
+        
+        NSLog(@"The current value of the portfolio is %.2f", [portfolio currentValue]);
+        
     }
     return 0;
 }

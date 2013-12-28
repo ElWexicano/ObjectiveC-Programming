@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3451D9CB186F1B5B00388BD9 /* Portfolio.m in Sources */ = {isa = PBXBuildFile; fileRef = 3451D9CA186F1B5B00388BD9 /* Portfolio.m */; };
 		34743353186CE07E00CAA5DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34743352186CE07E00CAA5DB /* Foundation.framework */; };
 		34743356186CE07E00CAA5DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34743355186CE07E00CAA5DB /* main.m */; };
 		3474335A186CE07E00CAA5DB /* Stocks.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 34743359186CE07E00CAA5DB /* Stocks.1 */; };
@@ -28,6 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3451D9C9186F1B5B00388BD9 /* Portfolio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Portfolio.h; sourceTree = "<group>"; };
+		3451D9CA186F1B5B00388BD9 /* Portfolio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Portfolio.m; sourceTree = "<group>"; };
 		3474334F186CE07E00CAA5DB /* Stocks */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Stocks; sourceTree = BUILT_PRODUCTS_DIR; };
 		34743352186CE07E00CAA5DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		34743355186CE07E00CAA5DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -54,6 +57,8 @@
 		34743346186CE07E00CAA5DB = {
 			isa = PBXGroup;
 			children = (
+				3451D9C9186F1B5B00388BD9 /* Portfolio.h */,
+				3451D9CA186F1B5B00388BD9 /* Portfolio.m */,
 				34743360186CE09800CAA5DB /* StockHolding.h */,
 				34743361186CE09800CAA5DB /* StockHolding.m */,
 				34743366186DD6FE00CAA5DB /* ForeignStockHolding.h */,
@@ -149,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3451D9CB186F1B5B00388BD9 /* Portfolio.m in Sources */,
 				34743368186DD6FE00CAA5DB /* ForeignStockHolding.m in Sources */,
 				34743362186CE09800CAA5DB /* StockHolding.m in Sources */,
 				34743356186CE07E00CAA5DB /* main.m in Sources */,
