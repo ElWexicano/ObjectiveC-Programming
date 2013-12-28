@@ -15,9 +15,7 @@ int main(int argc, const char * argv[])
 
     @autoreleasepool {
         
-        
-        
-        NSMutableArray *employess = [NSMutableArray array];
+        NSMutableArray *employess = [[NSMutableArray alloc] init];
         
         for (int i = 0; i < 10; i++) {
             // Create an instance of Person
@@ -51,6 +49,10 @@ int main(int argc, const char * argv[])
             [allAssets addObject:asset];
         }
         
+        NSSortDescriptor *voa = [NSSortDescriptor sortDescriptorWithKey:@"valueOfAssets" ascending:YES];
+        NSSortDescriptor *ei = [NSSortDescriptor sortDescriptorWithKey:@"employeeID" ascending:YES];
+        
+        [employess sortUsingDescriptors:[NSArray arrayWithObjects:voa, ei, nil]];
         
         NSLog(@"Employees: %@", employess);
 
