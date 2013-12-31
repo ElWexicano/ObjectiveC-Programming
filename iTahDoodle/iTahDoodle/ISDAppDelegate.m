@@ -141,4 +141,27 @@ NSString *docPath()
     return c;
 }
 
+#pragma mark - Adding Tasks
+
+- (void)addTask:(id)sender
+{
+    NSString *task = [taskField text];
+    
+    if ([task isEqualToString:@""]) {
+        return;
+    }
+    
+    // Add the task to the array of tasks.
+    [tasks addObject:tasks];
+    
+    // Refresh the table.
+    [tasksTable reloadData];
+    
+    // Clear the task from the task field.
+    [taskField setText:@""];
+    
+    // Dismiss the keyboard.
+    [taskField resignFirstResponder];
+}
+
 @end
