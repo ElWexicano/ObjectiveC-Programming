@@ -15,7 +15,11 @@ int main(int argc, const char * argv[])
 
     @autoreleasepool {
         
+        // Create an array of Employee objects
         NSMutableArray *employess = [[NSMutableArray alloc] init];
+        
+        // Create a dictionary of executives
+        NSMutableDictionary *executives = [[NSMutableDictionary alloc] init];
         
         for (int i = 0; i < 10; i++) {
             // Create an instance of Person
@@ -27,9 +31,20 @@ int main(int argc, const char * argv[])
             [person setEmployeeID:i];
             
             [employess addObject:person];
+            
+            if (i == 0) {
+                [executives setObject:person forKey:@"CEO"];
+            }
+            
+            if (i == 1) {
+                [executives setObject:person forKey:@"CTO"];
+            }
         }
         
         NSMutableArray *allAssets = [[NSMutableArray alloc] init];
+        
+        NSLog(@"Executives: %@", executives);
+        
         
         for (int i = 0; i < 10; i++) {
             
