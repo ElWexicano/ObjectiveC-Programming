@@ -94,6 +94,11 @@ NSString *docPath()
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    // This method is only called in iOS 4.0+
+    
+    // Save our tasks array to disk
+    [tasks writeToFile:docPath() atomically:YES];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
@@ -109,6 +114,11 @@ NSString *docPath()
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    
+    // This method is only called in iOS versions prior to 4.0 so do I really give a shizzle about it?
+    
+    // Save our tasks array to disk
+    [tasks writeToFile:docPath() atomically:YES];
 }
 
 #pragma mark - Table View Management
@@ -152,7 +162,7 @@ NSString *docPath()
     }
     
     // Add the task to the array of tasks.
-    [tasks addObject:tasks];
+    [tasks addObject:task];
     
     // Refresh the table.
     [tasksTable reloadData];
